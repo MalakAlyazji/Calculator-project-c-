@@ -84,7 +84,7 @@ namespace CalculatorProjectt
             btdiv.Enabled = true;
             btsub.Enabled = true;
             btsum.Enabled = true;
-            btequal.Enabled = true;
+            btequal.Enabled = false;
             btsqr.Enabled = true;
             btsquare2.Enabled = true;
             bt1x.Enabled = true;
@@ -174,12 +174,24 @@ namespace CalculatorProjectt
         }
         private void opclick(object sender, EventArgs e)
         {
+            btequal.Enabled = true;
+            bt9.Enabled = false;
             button3.Enabled = true;
             getfirstnum();
             op = optype(((Button)sender).Text);
+            bt8.Enabled = true;
+            bt0.Enabled = true;
+            bt1.Enabled = true;
+            bt2.Enabled = true;
+            bt3.Enabled = true;
+            bt4.Enabled = true;
+            bt5.Enabled = true;
+            bt6.Enabled = true;
+            bt7.Enabled = true;
+            bt9.Enabled = true;
         }
         void calculateresult()
-        { 
+        {
             switch (op)
             {
                 case enoperation.sum:
@@ -217,7 +229,6 @@ namespace CalculatorProjectt
             }
             txtresult.Text = result.ToString();
             fillviewlist();
-            btequal.Enabled = false;
             bt8.Enabled = false;
             bt0.Enabled = false;
             bt1.Enabled = false;

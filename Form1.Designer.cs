@@ -409,6 +409,7 @@ namespace CalculatorProjectt
             // btequal
             // 
             this.btequal.BackColor = System.Drawing.Color.NavajoWhite;
+            this.btequal.Enabled = false;
             this.btequal.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btequal.Location = new System.Drawing.Point(399, 583);
             this.btequal.Name = "btequal";
